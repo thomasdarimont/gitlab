@@ -1,7 +1,7 @@
 ## Change Log
 
 ### upcoming
-- **Your contribution here.**
+- add --json CLI parameter to output results as JSON
 
 ### 3.4.0 (22/04/2015)
 - [9acb83d](https://github.com/NARKOZ/gitlab/commit/9acb83d2d068720b07934f5152313dc22a2f6374) remove check for missing attributes
