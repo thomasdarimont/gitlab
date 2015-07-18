@@ -182,7 +182,7 @@ class Gitlab::CLI
       end
 
       {
-        :cmd => "Gitlab.#{cmd} #{args.join(', ')}".strip!,
+        :cmd => "Gitlab.#{cmd} #{args.join(', ')}".strip,
         :result => result
       }
 
