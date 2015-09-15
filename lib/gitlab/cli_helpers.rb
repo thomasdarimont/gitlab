@@ -105,13 +105,13 @@ class Gitlab::CLI
       if data.empty?
         puts '{}'
       else
-        case data
+        hash_result = case data
           when Gitlab::ObjectifiedHash
-            hash_result = record_hash([data], cmd, args, true)
+            record_hash([data], cmd, args, true)
           when Array
-            hash_result = record_hash(data, cmd, args)
+            record_hash(data, cmd, args)
           else
-            hash_result = { :cmd => cmd, :data => data, :args => args }
+            { :cmd => cmd, :data => data, :args => args }
         end
         puts JSON.pretty_generate(hash_result)
       end
