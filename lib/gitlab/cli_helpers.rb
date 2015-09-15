@@ -162,7 +162,7 @@ class Gitlab::CLI
       else
         arr, keys = get_keys(args, data)
         result = []
-        arr.each_with_index do |hash, index|
+        arr.each do |hash|
           row = {}
 
           keys.each do |key|
